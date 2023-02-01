@@ -1,5 +1,5 @@
 # Collatz_Conjecture_Project
-A project that is designed to show the number of iterations for each number (1-100,000 here) and determine the number of iterations of the Collatz conjecture that number needs to get to 1.
+A project that is designed to show the number of iterations for each number (1-100,000 here) and determine the number of iterations of the Collatz conjecture that number needs to get to 1. For a description of the Collatz conjecture, [click here](https://www.quantamagazine.org/why-mathematicians-still-cant-solve-the-collatz-conjecture-20200922/).
 
 ## Process
 I started by building the function collatz_test to act as the engine for the scatterplot function. This function is meant to take in any input, determine if the input meets the criteris for the Collatz conjecture, and (if it does) to count the number of iterations necessary to come to 1. Then I built the plotter, which takes in a starting number and an ending number, populates the numbers inbetween to a series in pandas, and graphs both the numbers and the number of iterations from collatz_test. Below is a picture of the resultsfor the numbers 1 through 100,000.
