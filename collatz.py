@@ -2,6 +2,7 @@
 import seaborn as sns
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 #Defining a function to check that the numbers meet the criteria of the Collatz conjecture, then find the number of iterations of Collatz are necessary
 def collatz_test(num):
