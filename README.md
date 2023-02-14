@@ -2,9 +2,11 @@
 A project that is designed to show the number of iterations for each number (1-100,000 here) and determine the number of iterations of the Collatz conjecture that number needs to get to 1. For a description of the Collatz conjecture, [click here](https://www.quantamagazine.org/why-mathematicians-still-cant-solve-the-collatz-conjecture-20200922/).
 
 ## Process
-I started by building the function collatz_test to act as the engine for the scatterplot function. This function is meant to take in any input, determine if the input meets the criteris for the Collatz conjecture, and (if it does) to count the number of iterations necessary to come to 1. Then I built the plotter, which takes in a starting number and an ending number, populates the numbers inbetween to a series in pandas, and graphs both the numbers and the number of iterations from collatz_test. Below is a picture of the resultsfor the numbers 1 through 100,000.
+I started by building the function collatz_test to act as the engine for the scatterplot function. This function is meant to take in any input, determine if the input meets the criteris for the Collatz conjecture, and (if it does) to count the number of iterations necessary to come to 1 (a.k.a. Collatz stop time). Then I built the plotter, which takes in a starting number and an ending number, populates the numbers inbetween to a series in pandas, and graphs both the numbers and the Collatz stop time from collatz_test. Below is a picture of the results for the numbers 1 through 100,000.
 
 <img src="https://github.com/aadams10046/Collatz_Conjecture_Project/blob/main/Collatz_1_to_100000.png?raw=true" alt="Graph for Collatz Iterations 1-100,000" title="Results">
+
+One can see a complex structure to the number of steps a number takes to reach one, though the structure is not readily discernible (this is, after all, an unsolved Millenium Prize problem in mathematics), the distribution of Collatz stop times can be seen to be roughly logarithmic and positive. This means that larger numbers have larger Collatz stop times, though there are significant exceptions (i.e. numbers of the form 2<sup>n</sup> resolve to 1 with a stop time of n). 
 
 ## Skills Demonstrated
 * Python: including seaborn, pandas series, building functions, and mathematical logic
